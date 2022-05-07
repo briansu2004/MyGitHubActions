@@ -6,6 +6,8 @@ My GitHub Actions
 
 [GitHubActions - Java Gradle app](GitHubActionsJava.md)
 
+[Repo](https://github.com/briansu2004/MyGitHubActionsJavaApp)
+
 ## NodeJS app
 
 ## Python app
