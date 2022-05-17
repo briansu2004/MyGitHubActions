@@ -1,14 +1,10 @@
-# MyGitHubActionsJavaApp
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+# This workflow will build a Java project with Gradle and cache/restore any dependencies to improve the workflow execution time
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-gradle
 
-My GitHub Actions Java app
-
-## Screenshot
-
-![](image/GitHubActionsJava/github_secrets.png)
-
-GitHub Actions Workflow in old version syntax
-
-```
 name: Java CI with Gradle
 
 on:
@@ -46,31 +42,3 @@ jobs:
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-```
-
-![](image/GitHubActionsJava/wf_build.png)
-
-![](image/GitHubActionsJava/wf_build_gradle.png)
-
-![](image/GitHubActionsJava/wf_build_docker.png)
-
-![](image/GitHubActionsJava/docker_hub.png)
-
-## Troubleshooting
-
-### Error: Gradle script '/home/runner/work/.../gradlew' is not executable
-
-```
-    - name: Make gradlew executable
-      run: chmod +x ./gradlew
-```
-
-### Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain
-
-Too many catches
-
-- Update Gradle wrapper
-
-- Make sure JDK matches Gradle
-
-- Verify with IntelliJ
